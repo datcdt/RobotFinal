@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robotF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.019165 -4.9915E-05 -0.069673"
+        rpy="0 0 0" />
+      <mass
+        value="1.612" />
+      <inertia
+        ixx="0.00081644"
+        ixy="4.489E-09"
+        ixz="-8.1238E-06"
+        iyy="0.0023138"
+        iyz="-1.2828E-09"
+        izz="0.0029163" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="R_BCD">
+    <inertial>
+      <origin
+        xyz="-1.4807E-06 -3.1788E-05 -0.003944"
+        rpy="0 0 0" />
+      <mass
+        value="0.0194" />
+      <inertia
+        ixx="3.9446E-06"
+        ixy="-2.7291E-09"
+        ixz="-5.1243E-09"
+        iyy="3.9498E-06"
+        iyz="-1.6836E-09"
+        izz="4.4119E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BCD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BCD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_BCD_joint"
+    type="continuous">
+    <origin
+      xyz="-0.10835 -0.103 -0.05996"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_BCD" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="L_BCD">
+    <inertial>
+      <origin
+        xyz="2.5424E-05 1.1495E-06 0.003944"
+        rpy="0 0 0" />
+      <mass
+        value="0.0194" />
+      <inertia
+        ixx="3.9491E-06"
+        ixy="-3.2707E-09"
+        ixz="-2.2853E-09"
+        iyy="3.9453E-06"
+        iyz="-4.8858E-09"
+        izz="4.4119E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BCD.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BCD.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_BCD_joint"
+    type="continuous">
+    <origin
+      xyz="-0.10836 0.103 -0.059982"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_BCD" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="R_BBD1">
+    <inertial>
+      <origin
+        xyz="7.2828E-07 2.3201E-07 3.5107E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.018151" />
+      <inertia
+        ixx="1.4698E-06"
+        ixy="-2.3366E-11"
+        ixz="-3.6994E-11"
+        iyy="1.4699E-06"
+        iyz="-1.1775E-11"
+        izz="2.7399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BBD1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BBD1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_BBD1_joint"
+    type="continuous">
+    <origin
+      xyz="-0.074331 -0.103 -0.025"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_BBD1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="R_BBD2">
+    <inertial>
+      <origin
+        xyz="-7.5483E-07 1.2019E-07 3.5107E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.018151" />
+      <inertia
+        ixx="1.4698E-06"
+        ixy="1.2619E-11"
+        ixz="3.8339E-11"
+        iyy="1.4699E-06"
+        iyz="-6.114E-12"
+        izz="2.7399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BBD2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BBD2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_BBD2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.030331 -0.103 -0.077"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_BBD2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="R_BBD3">
+    <inertial>
+      <origin
+        xyz="7.4679E-07 1.6288E-07 3.5107E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.018151" />
+      <inertia
+        ixx="1.4698E-06"
+        ixy="-1.6803E-11"
+        ixz="-3.7934E-11"
+        iyy="1.4699E-06"
+        iyz="-8.2638E-12"
+        izz="2.7399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BBD3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BBD3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_BBD3_joint"
+    type="continuous">
+    <origin
+      xyz="0.010169 -0.103 -0.025"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_BBD3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="R_BBD4">
+    <inertial>
+      <origin
+        xyz="6.5481E-07 3.9426E-07 3.5107E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.018151" />
+      <inertia
+        ixx="1.4699E-06"
+        ixy="-3.5742E-11"
+        ixz="-3.3265E-11"
+        iyy="1.4699E-06"
+        iyz="-2.0018E-11"
+        izz="2.7399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BBD4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BBD4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_BBD4_joint"
+    type="continuous">
+    <origin
+      xyz="0.094669 -0.103 -0.025"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_BBD4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="R_BBD5">
+    <inertial>
+      <origin
+        xyz="7.5148E-07 1.3964E-07 3.5107E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.018151" />
+      <inertia
+        ixx="1.4698E-06"
+        ixy="-1.4488E-11"
+        ixz="-3.8172E-11"
+        iyy="1.4699E-06"
+        iyz="-7.0833E-12"
+        izz="2.7399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BBD5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/R_BBD5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="R_BBD5_joint"
+    type="continuous">
+    <origin
+      xyz="0.12967 -0.103 -0.062"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="R_BBD5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="L_BBD1">
+    <inertial>
+      <origin
+        xyz="-1.7175E-07 -7.4479E-07 -3.5107E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.018151" />
+      <inertia
+        ixx="1.4699E-06"
+        ixy="-1.7675E-11"
+        ixz="-8.7146E-12"
+        iyy="1.4698E-06"
+        iyz="-3.7833E-11"
+        izz="2.7399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BBD1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BBD1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_BBD1_joint"
+    type="continuous">
+    <origin
+      xyz="-0.074331 0.103 -0.025"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_BBD1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="L_BBD2">
+    <inertial>
+      <origin
+        xyz="-7.6209E-07 5.8592E-08 -3.5107E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.018151" />
+      <inertia
+        ixx="1.4698E-06"
+        ixy="6.1336E-12"
+        ixz="-3.871E-11"
+        iyy="1.4699E-06"
+        iyz="2.9666E-12"
+        izz="2.7399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BBD2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BBD2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_BBD2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.030331 0.103 -0.077"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_BBD2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="L_BBD3">
+    <inertial>
+      <origin
+        xyz="-5.1491E-08 -7.626E-07 -3.5107E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.018151" />
+      <inertia
+        ixx="1.4699E-06"
+        ixy="-5.3874E-12"
+        ixz="-2.6059E-12"
+        iyy="1.4698E-06"
+        iyz="-3.8736E-11"
+        izz="2.7399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BBD3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BBD3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_BBD3_joint"
+    type="continuous">
+    <origin
+      xyz="0.010169 0.103 -0.025"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_BBD3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="L_BBD4">
+    <inertial>
+      <origin
+        xyz="4.6032E-08 -7.6295E-07 -3.5107E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.018151" />
+      <inertia
+        ixx="1.4699E-06"
+        ixy="4.9186E-12"
+        ixz="2.3476E-12"
+        iyy="1.4698E-06"
+        iyz="-3.8752E-11"
+        izz="2.7399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BBD4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BBD4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_BBD4_joint"
+    type="continuous">
+    <origin
+      xyz="0.094669 0.103 -0.025"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_BBD4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="L_BBD5">
+    <inertial>
+      <origin
+        xyz="1.1695E-07 -7.5534E-07 -3.5107E-07"
+        rpy="0 0 0" />
+      <mass
+        value="0.018151" />
+      <inertia
+        ixx="1.4699E-06"
+        ixy="1.2289E-11"
+        ixz="5.9496E-12"
+        iyy="1.4698E-06"
+        iyz="-3.8365E-11"
+        izz="2.7399E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BBD5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/L_BBD5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="L_BBD5_joint"
+    type="continuous">
+    <origin
+      xyz="0.12967 0.103 -0.062"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="L_BBD5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      effort="0"
+      velocity="10" />
+  </joint>
+  <link
+    name="Lidar">
+    <inertial>
+      <origin
+        xyz="-0.019165 -4.9915E-05 -0.069673"
+        rpy="0 0 0" />
+      <mass
+        value="0.2073" />
+      <inertia
+        ixx="0.00081644"
+        ixy="4.489E-09"
+        ixz="-8.1238E-06"
+        iyy="0.0023138"
+        iyz="-1.2828E-09"
+        izz="0.0029163" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/Lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robotF/meshes/Lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lidar_joint"
+    type="fixed">
+    <origin
+      xyz="0.00060691 -0.00054999 -0.2025"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="Lidar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
